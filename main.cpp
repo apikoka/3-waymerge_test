@@ -6,16 +6,16 @@ using namespace std;
 int main()
 {
 	cout.setf(ios::fixed);
-	cout.precision(5);
+	cout.precision(10);
 	double incount=0;
 	double total=0;
-	for(double i=-1;i<=1;i+=0.01)
+	for(double i=-5;i<=5;i+=0.0001)
 	{
-		for(double j=-1;j<=1;j+=0.01)	
+		for(double j=-5;j<=5;j+=0.0001)	
 		{
 			total++;
 
-			if((i*i+j*j)<=1)
+			if((i*i+j*j)<=100)
 			{
 				incount++;
 			}
